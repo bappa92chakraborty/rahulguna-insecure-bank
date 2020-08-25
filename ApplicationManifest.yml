@@ -1,0 +1,26 @@
+application:
+  appId: PKMVS12
+  assetId: PKMVS12
+  sdlcType: EDM
+  appType: Webapp
+  webservice: false
+  restApi: false
+  microservice: false
+  frameworks: 
+   - Spring security
+   - Hibernate
+  javaVersion: Java 8
+  buildSystem: Maven
+  riskMatrixRevision: Rev1.0
+  sourceFilePattern: ".*\\+\\+\\+.*(\\.java|\\.jsp)+.*"
+  sensitivePackagePattern: ".*(\\+\\+\\+.*(org\\/hdivsamples\\/security)).*"
+  fileChangeThreshold: 20
+
+environment:
+  bitbucketOwner: sig-devsecops
+  bitbucketRepositoryName: InsecureBank
+  bitbucketBranchName: master
+  testDeploymentRoot: "insecure-bank"
+  imChannelIdentifier: "#stargazer-notifications"
+  jiraProjectName: "DEM"
+  jiraIssuesQuery: "resolution = \"Unresolved\" AND labels in (Security, Defect)"
