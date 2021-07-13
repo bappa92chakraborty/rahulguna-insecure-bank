@@ -1,3 +1,3 @@
-@Library('Stargazer-Lib')
+@Library('rahulguna/local-jenkins-library')
 import com.demo.*
-new pipeline.EntryPoint().execute('ApplicationManifest.yml', 'SecurityManifest.yml')
+new pipeline.EntryPoint().execute('io-manifest.yml')
